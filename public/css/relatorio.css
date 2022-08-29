@@ -1,0 +1,145 @@
+/*######################################Relatorio#########################################*/
+
+#intervaloRelatorioSelect {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
+
+#relatorioFaturamentoContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#relatorioFaturamentoTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 1.4rem;
+}
+
+.relatorioFaturamento {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.relatorioFaturamento:first-child {
+    background-color: #3498db;
+}
+.relatorioFaturamento:nth-child(2) {
+    background-color: #ff7979;
+}
+.relatorioFaturamento:last-child {
+    border-bottom: 3px solid #2ecc71;
+    border-radius: 0;
+    color: black;
+}
+
+.estatisticasCard {
+    background-color: #ecf0f1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 50vh;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+}
+
+.estatisticasCardData div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+main {
+    margin-bottom: 20vh;
+}
+
+.estatisticasCardTitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+#estatisticasRelatorio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#faturamentoBarChartContainer {
+    margin-top: 5vh;
+    text-align: center;
+}
+#faturamentoBarChartContainer h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#faturamentoBarChart {
+    color: black;
+}
+
+canvas {
+    border: 1px solid gainsboro;
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+#relatorioText {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.ChartsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoBtn {
+    width: 25vw;
+    height: 10vh;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 20px;
+}
+
+@media (max-width: 1050px) {
+    #relatorioFaturamentoContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #relatorioFaturamentoTextContainer {
+        width: 90%;
+    }
+    .relatorioFaturamento {
+        margin: 10px 0;
+    }
+    #intervaloRelatorioSelect {
+        display: block;
+        margin: 30px auto;
+    }
+    .estatisticasCard {
+        width: 350px;
+    }
+    .infoBtn {
+        width: 45vw;
+        height: 20vh;
+    }
+}
+@media (max-width: 720px) {
+    .infoBtn {
+        width: 90vw;
+        height: 20vh;
+    }
+}

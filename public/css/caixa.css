@@ -1,0 +1,192 @@
+/*######################################CAIXA#########################################*/
+
+.caixa-container-bg-br {
+    background-color: #d2d2d2;
+    border-radius: 10px;
+}
+
+#caixa-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin: 14vh auto;
+}
+#caixa-container h3 {
+    position: relative;
+    bottom: 40px;
+    margin: 0;
+    left: 5px;
+
+    font-size: 1.4em;
+    font-weight: 300;
+}
+#nova-venda {
+    width: 60%;
+    height: 60vh;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#estatisticas {
+    width: 38%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#estatisticas-dia {
+    width: 100%;
+    height: 35vh;
+    font-weight: 300;
+}
+#container-ultima-venda {
+    width: 100%;
+    height: 17vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#ultima-venda {
+    width: 70%;
+}
+
+#fechar-caixa {
+    background-color: #73ac6d;
+    border-radius: 10px;
+
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 25%;
+}
+
+#fechar-caixa:hover {
+    background-color: #389629;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#nova-venda label {
+    display: block;
+    font-size: 1.3rem;
+}
+
+#nova-venda input {
+    width: 90%;
+    height: 8vh;
+}
+
+.list {
+    width: 40vw;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+}
+.list-items {
+    padding: 10px 5px;
+}
+.list-items:hover {
+    background-color: #dddddd;
+}
+
+#addButton {
+    color: white;
+    background-color: #0984e3;
+    height: 8vh;
+    width: 9%;
+    text-align: center;
+
+    border-radius: 10px;
+
+    font-size: 2rem;
+}
+#addButton:hover {
+    background-color: #1275c0;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#add-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto-list-item {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#finalizar-venda {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+#total {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    background-color: #56b1e7;
+}
+#btn-adicionar {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #73ac6d;
+}
+#estatisticas-dia p {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+
+#ultima-venda p {
+    font-size: 1.2rem;
+    padding: 2px 10px;
+    position: relative;
+    bottom: 10px;
+}
+.venda-list {
+    height: 32vh;
+}
+.dadoDestaque {
+    font-weight: 600;
+}
+@media (max-width: 970px) {
+    #caixa-container {
+        flex-direction: column;
+    }
+    #nova-venda {
+        width: 100%;
+    }
+    #estatisticas {
+        width: 100%;
+        margin-top: 60px;
+        flex-direction: column-reverse;
+    }
+    .list {
+        width: 70vw;
+    }
+}

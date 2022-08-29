@@ -1,0 +1,49 @@
+/*############################################## INDEX #####################################################*/
+#bem-vindo {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10vh;
+}
+#bem-vindo h1 {
+    font-size: 3em;
+    font-weight: 400;
+}
+#bem-vindo p {
+    font-size: 4em;
+}
+
+#abrir-caixa-container {
+    text-align: center;
+    margin: 50px auto;
+}
+#abrir-caixa-container a {
+    padding: 20px 125px;
+    font-weight: 400;
+    border-radius: 50px;
+    background-color: #5eb354;
+    color: white;
+    font-size: 3em;
+}
+#abrir-caixa-container a:hover {
+    background-color: #389629;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#abrir-caixa-container p {
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+@media (max-width: 540px) {
+    #bem-vindo h1 {
+        font-size: 1.7rem;
+    }
+    #bem-vindo p {
+        font-size: 2.5rem;
+    }
+    #abrir-caixa-container a {
+        padding: 5vh 15vw;
+        font-size: 2rem;
+    }
+}
